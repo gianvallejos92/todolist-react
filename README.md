@@ -2,6 +2,8 @@
 
 A To-Do List app built with React. Users can add, delete, and mark tasks as completed. The app demonstrates fundamental React concepts like state management, component hierarchy, and props communication.
 
+![Screenshot] (./Thumbnail.png)
+
 ## 🚀 Features
 
 - ✅ Add new tasks
