@@ -22,6 +22,6 @@ Clone the repo and install dependencies:
 
 ```bash
 git clone https://github.com/gianvallejos92/todolist-react.git
-cd todo-list
+cd todolist-react
 npm install
 npm run dev
