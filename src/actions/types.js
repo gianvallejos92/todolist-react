@@ -1,0 +1,4 @@
+export const ADD_TASK = "ADD_TASK";
+export const REMOVE_TASK = "REMOVE_TASK"; 
+export const ONCHANGE_TASK_NAME = "ONCHANGE_TASK_NAME";
+export const ONCHANGE_CHECKBOX = "ONCHANGE_CHECKBOX";

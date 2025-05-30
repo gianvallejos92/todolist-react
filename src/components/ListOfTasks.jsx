@@ -1,23 +1,21 @@
-import ListItem from './ListItem';
+import { useContext } from "react";
+import { GeneralContext } from '../context/generalContext'
 
-const ListOfTasks = (props) => {
-    const {
-        items, 
-        handleCheckboxChangeInGrandPa, 
-        deleteTaskInGrandPa
-    } = {...props}
+import ItemWrapper from './ItemWrapper/ItemWrapper';
+
+const ListOfTasks = () => {
+
+    const { state } = useContext(GeneralContext);
     
     return (
         <div id="list-of-tasks">
             {
-              (items.length !== 0) ?
+              (state.items.length !== 0) ?
               (
-                  items.map (item => (
-                    <ListItem 
+                  state.items.map (item => (
+                    <ItemWrapper 
                       {...item} 
                       key={item.id} 
-                      deleteTaskInParent={deleteTaskInGrandPa}
-                      handleCheckBoxInParent={handleCheckboxChangeInGrandPa}
                     />
                   ))
               ) : "Empty list of items"       
